@@ -6,6 +6,9 @@ module.exports = (state, action) => {
   switch(type){
     case 'INIT':
       return newState
+    case 'GET_ALL_CATS':
+      newState.cats = payload
+      return newState
     default:
       return newState
   }
