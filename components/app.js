@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
+import getAllCats from '../api/getAllCats'
 
 module.exports = ({state, dispatch}) => {
+  getAllCats(dispatch)
+  console.log('this is the state',state);
   return (
     <div>
       <h1>meowtown</h1>
