@@ -1,4 +1,4 @@
-import clone from 'clone'
+const clone = require( 'clone')
 
 module.exports = (state, action) => {
   const newState = clone(state)
